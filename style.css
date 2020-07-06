@@ -10,10 +10,11 @@ body {
 }
 .sidebar {
   position: fixed;
-  left: -250px;
+  left: 0;
   width: 250px;
   height: 100%;
   background: darkslateblue;
+  transition: all .5s ease;
 }
 header{
   font-size: 22px;
@@ -66,4 +67,8 @@ label #cancel{
   font-size: 30px;
   color: #0a5275;
   padding-left: 4px 9px;
+}
+#check:checked ~ .sidebar{
+left: 0;
+
 }
